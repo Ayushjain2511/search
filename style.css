@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* More modern font */
+    background: linear-gradient(to right, grey, black); /* Gradient background */
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container {
+    max-width: 600px;
+    margin: 80px auto;
+    background-color: black;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Deeper shadow for a modern look */
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 30px; /* Rounded input */
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: grey;
+    box-shadow: inset 0 4px 12px rgba(0, 123, 255, 0.1); /* Shadow effect on focus */
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 30px; /* Rounded buttons */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: grey;
+    transform: translateY(-2px); /* Subtle hover effect */
+    box-shadow: 0 6px 12px white;
+}
+
+#clearHistoryButton {
+    background-color: grey;
+}
+
+#clearHistoryButton:hover {
+    background-color: grey;
+}
+
+/* Search History */
+#searchHistory {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+#searchHistory li {
+    background-color: black;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px white; /* Slight shadow for a card-like look */
+    transition: transform 0.3s ease;
+}
+
+#searchHistory li:hover {
+    transform: translateX(5px); /* Hover effect on history items */
+}
+
+.searchInput{
+    background-color: black;
+    color:white;
+}
